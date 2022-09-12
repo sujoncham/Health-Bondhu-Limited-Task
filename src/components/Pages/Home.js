@@ -1,6 +1,6 @@
 import React from 'react';
 import Appointment from '../HomeSections/Appointment';
-import Banner from '../HomeSections/Banner';
+import Banner from '../HomeSections/Banner/Banner';
 import FQA from '../HomeSections/FQA';
 import Services from '../HomeSections/Services';
 import Testimonial from '../HomeSections/Testimonial';

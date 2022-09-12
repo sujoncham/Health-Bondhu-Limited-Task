@@ -5,7 +5,7 @@ import Home from './components/Pages/Home';
 
 function App() {
   return (
-    <div className="App">
+    <div style={{background:'#E9EEF7'}} className="App">
       <Header></Header>
       <Home />
       <Footer />

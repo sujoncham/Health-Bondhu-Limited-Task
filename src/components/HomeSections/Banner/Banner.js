@@ -1,11 +1,11 @@
 import React from 'react';
-import bgBanner from '../../assets/Ellipse_5.png';
-import doctor1 from '../../assets/Ellipse_6.png';
-import doctor2 from '../../assets/Ellipse_7.png';
-import doctor3 from '../../assets/Ellipse_8.png';
-import doctor4 from '../../assets/Ellipse_9.png';
-import banner from '../../assets/pose_2.png';
-import vector from '../../assets/Vector.png';
+import bgBanner from '../../../assets/Ellipse_5.png';
+import doctor1 from '../../../assets/Ellipse_6.png';
+import doctor2 from '../../../assets/Ellipse_7.png';
+import doctor3 from '../../../assets/Ellipse_8.png';
+import doctor4 from '../../../assets/Ellipse_9.png';
+import banner from '../../../assets/pose_2.png';
+import vector from '../../../assets/Vector.png';
 
 const Banner = () => {
 
