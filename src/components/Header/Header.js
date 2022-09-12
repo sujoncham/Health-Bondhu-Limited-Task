@@ -7,7 +7,7 @@ const Header = () => {
             <Container>
                 <Navbar.Brand href="#"> 
                     <span style={{color: '#2D89FF'}}>Doc</span> 
-                    <span style={{color: '#2dd'}}>mic.</span>
+                    <span style={{color: '#642DFF'}}>mic.</span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
