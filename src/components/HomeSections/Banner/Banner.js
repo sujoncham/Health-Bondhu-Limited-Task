@@ -6,6 +6,7 @@ import doctor3 from '../../../assets/Ellipse_8.png';
 import doctor4 from '../../../assets/Ellipse_9.png';
 import banner from '../../../assets/pose_2.png';
 import vector from '../../../assets/Vector.png';
+import './Banner.css';
 
 const Banner = () => {
 
@@ -41,21 +42,20 @@ const Banner = () => {
                             <button className='btn btn-primary h1 px-5 py-3'>Meet Our Specialit</button>
                         </div>
                     </div>
-                    <div className='mt-5'>
-                        <div className="row">
-                            <div className="col-md-4">
-                                <h3 style={{color:'#642DFF'}}>262k+</h3>
-                                <p>Recovered Patients</p>
-                            </div>
-                            <div className="col-md-4">
-                                <h3 style={{color:'#642DFF'}}>96%</h3>
-                                <p>Satisfaction Rate</p>
-                            </div>
-                            <div className="col-md-4">
-                                <h3 style={{color:'#642DFF'}}>86+</h3>
-                                <p>Experts Doctors</p>
-                            </div>
+                    <div className='mt-5 d-flex justify-content-center align-items-center'>
+                        <div className="static-data">
+                            <h3 style={{color:'#642DFF'}}>262k+</h3>
+                            <p>Recovered Patients</p>
                         </div>
+                        <div className="static-data">
+                            <h3 style={{color:'#642DFF'}}>96%</h3>
+                            <p>Satisfaction Rate</p>
+                        </div>
+                        <div className="static-data">
+                            <h3 style={{color:'#642DFF'}}>86+</h3>
+                            <p>Experts Doctors</p>
+                        </div>
+                       
                     </div>
                 </div>
                 <div className="col-md-7">

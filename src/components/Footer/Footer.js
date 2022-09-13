@@ -45,7 +45,7 @@ const Footer = () => {
                     </div>
                     <div className="col-md-3">
                         <h4 className='mt-5 text-color'>Opening Hours</h4>
-                        <div>
+                        <div className='time-text'>
                             <div className='d-flex justify-content-start gap-3'>
                                 <span className='dayswidth'>Mon - Tue</span>
                                 <span>8.00AM - 5.00PM</span>

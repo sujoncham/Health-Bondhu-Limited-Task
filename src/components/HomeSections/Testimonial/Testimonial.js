@@ -2,8 +2,8 @@ import React from 'react';
 
 const Testimonial = () => {
     return (
-        <div className="row mt-5">
-            <div className="col-md-12 text-center">
+        <div className="row mt-5 mb-5">
+            <div className="col-md-12 text-center mt-5 mb-5">
                 <h5 style={{color:"#642DFF"}}>Testimonial</h5>
                 <h1>What they say?</h1>
             </div>

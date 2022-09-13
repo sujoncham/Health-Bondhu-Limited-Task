@@ -1,0 +1,22 @@
+.mouse-pointer {
+  cursor: pointer;
+  width: 500px;
+}
+
+.myexpert {
+  bottom: 25%;
+  width: 250px;
+  background: #642dff;
+  padding: 10px;
+  color: #fff;
+  height: 83px;
+}
+
+.bg-expert {
+  background-image: url("../../../assets/Ellipse_13.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 50px;
+  height: 50px;
+}

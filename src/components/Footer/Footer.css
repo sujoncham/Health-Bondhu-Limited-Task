@@ -30,11 +30,16 @@
   font-size: 14px;
 }
 .dayswidth {
-  width: 120px;
+  width: 100px;
   color: #2d89ff;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .my-color {
   font-size: 14px;
+}
+
+.time-text {
+  font-size: 12px;
+  line-height: 30px;
 }
