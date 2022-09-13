@@ -16,14 +16,14 @@ const Appointment = () => {
    
     return (
         <div className="row mt-5">
-                <div className="col-md-5">
-                    <div className='bgAppoint'>
+                <div className="col-sm-12 col-md-5 col-lg-5 order-text">
+                    <div className='bgAppoint mt-5'>
                         <img className='w-100' src={appointment} alt="" />
                     </div>
                     
                 </div>
-                <div className="col-md-7">
-                    <div className="col-md-12">
+                <div className="col-sm-12 col-md-7 col-lg-7 order-image">
+                    <div className="col-md-12 mt-5">
                         <h5 style={{color:"#642DFF"}}>Our Hospital Feature</h5>
                         <h1>Make An Appointment Easy And Fast Services</h1>
                     </div>

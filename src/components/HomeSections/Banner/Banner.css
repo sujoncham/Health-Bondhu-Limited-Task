@@ -6,6 +6,17 @@
   font-size: 60px;
 }
 
+.meetDoctor {
+  background: #642dff;
+  padding: 10px;
+  border-radius: 8px;
+  width: 320px;
+}
+
+.meetDoctor h4 {
+  font-size: 12px;
+}
+
 .bgImage {
   background-image: url("../../../assets/Ellipse_5.png");
   background-position: center;
@@ -63,6 +74,12 @@
   .my-title {
     font-size: 14px !important;
   }
+  .meetDoctor {
+    display: none;
+  }
+  .checkup {
+    bottom: 0;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -72,6 +89,12 @@
   }
   .order-image {
     order: 1;
+    padding: 10px;
+  }
+
+  .mouse-pointer {
+    width: 100% !important;
+    padding: 5px !important;
   }
 }
 

@@ -1,13 +1,14 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import './Header.css';
 
 const Header = () => {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" className='sticky-top'>
             <Container>
                 <Navbar.Brand href="#"> 
-                    <span style={{color: '#2D89FF'}}>Doc</span> 
-                    <span style={{color: '#642DFF'}}>mic.</span>
+                    <span className='logo-text'>Doc</span> 
+                    <span className='logo-text-one'>mic.</span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">

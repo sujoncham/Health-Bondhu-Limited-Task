@@ -11,16 +11,8 @@ import './Banner.css';
 
 const Banner = () => {
 
-
-    const meetDoctor = {
-        background:'#642DFF', 
-        padding:'10px', 
-        borderRadius:'8px', 
-        width:'320px'
-    }
-
     return (
-            <div style={{ marginTop:'80px'}} className="row">
+            <div className="row mt-5">
                 <div className="col-sm-12 col-md-12 col-lg-5 order-text">
                     <div className='large-device'>
                         <h1>Your <span style={{color: '#2D89FF'}}>Health</span> Is Our <br />
@@ -54,20 +46,20 @@ const Banner = () => {
                             <img style={{width:'30px', marginTop:'5px'}} src={vector} alt="vector" />
                             <h6 className='text-white'>Regular Checkup</h6>
                         </div>
-                        <div style={meetDoctor} className='position-absolute bottom-0 end-0'>
+                        <div className='position-absolute bottom-0 end-0 meetDoctor'>
                             <h4 className='text-white'>Meet Our Doctors</h4>
                             <div className='d-flex justify-content-start align-items-center p-2'>
                                 <img className='doctors' src={doctor1} alt="doctor1" />
                                 <img className='doctors' src={doctor2} alt="doctor2" />
                                 <img className='doctors' src={doctor3} alt="doctor3" />
                                 <img className='doctors' src={doctor4} alt="doctor4" />
-                                <div style={{width:'50px', height:'50px'}} className='bg-primary rounded-circle d-flex justify-content-center align-items-center position-relative'>
+                                <div style={{width:'30px', height:'30px'}} className='bg-primary rounded-circle d-flex justify-content-center align-items-center position-relative'>
                                     <div className='stick-one'></div>
                                     <div className='stick-two'></div>
                                     
                                 </div>
                             </div>
-                            <div>
+                            <div className='bg-stick'>
                                 <img src={stick1} alt="stick1" />
                                 <img src={stick2} alt="stick2" />
                             </div>

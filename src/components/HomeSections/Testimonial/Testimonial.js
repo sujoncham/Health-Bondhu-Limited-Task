@@ -1,6 +1,8 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import character from '../../../assets/character.png';
 import banner from '../../../assets/pose_2.png';
+import pose from '../../../assets/pose_4.png';
 import './Testimonial.css';
 
 const Testimonial = () => {
@@ -10,7 +12,7 @@ const Testimonial = () => {
                 <h5 style={{color:"#642DFF"}}>Testimonial</h5>
                 <h1>What they say?</h1>
             </div>
-                <div className="d-flex justify-content-center">
+                <div className="d-flex justify-content-center mb-5">
                     <div className="col-md-6 col-md-offset-3 bg-slider">
               
                     <Carousel>
@@ -24,7 +26,7 @@ const Testimonial = () => {
                                     
                                 </div>
                                 <div className="col-md-4">
-                                    <img className="d-block w-100" src={banner} alt="Third slide" />
+                                    <img className="d-block w-100" src={character} alt="Third slide" />
                                 </div>
                             </div>
                             
@@ -53,7 +55,7 @@ const Testimonial = () => {
                                     
                                 </div>
                                 <div className="col-md-4">
-                                <img className="d-block w-100" src={banner} alt="Third slide" />
+                                <img className="d-block w-100" src={pose} alt="Third slide" />
                                 </div>
                             </div>
                         </Carousel.Item>
