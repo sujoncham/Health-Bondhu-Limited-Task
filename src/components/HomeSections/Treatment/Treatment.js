@@ -1,16 +1,9 @@
 import React from 'react';
-import bgTreat from '../../../assets/Group_10.png';
 import treatment from '../../../assets/pose_4.png';
 import './Treatment.css';
 
 const Treatment = () => {
 
-    const bgtreat = {
-        backgroundImage:`url(${bgTreat})`,
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: '100%',
-    }
 
     return (
         <div className="row">
@@ -24,8 +17,8 @@ const Treatment = () => {
            
                 </div>
                 <div className="col-md-6 mt-5">
-                    <div style={bgtreat}>
-                    <img className='w-100' src={treatment} alt="treatment" />
+                    <div className='bgtreat d-flex justify-content-center align-items-center'>
+                        <img className='w-75' src={treatment} alt="treatment" />
                     </div>
                 </div>
             </div>

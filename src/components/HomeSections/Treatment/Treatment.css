@@ -11,3 +11,11 @@
   font-size: 14px;
   text-align: justify;
 }
+
+.bgtreat {
+  background-image: url("../../../assets/Group_10.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  margin: 30px;
+}

@@ -1,9 +1,18 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import appointment from '../../../assets/pose_7.png';
 import './Appointment.css';
 
 const Appointment = () => {
+    const [data, setData] = useState([]);
+    useEffect(()=>{
+        const getData = async() =>{
+            const res = await fetch('appointment.json');
+            const result = await res.json();
+            setData(result);
+        }
+        getData();
+    }, [])
    
     return (
         <div className="row mt-5">
@@ -19,30 +28,23 @@ const Appointment = () => {
                         <h1>Make An Appointment Easy And Fast Services</h1>
                     </div>
                     <div className="row">
-                        <div className="col-md-6">
-                            <div className='bg-white p-3 mt-3 rounded'>
-                                <h5>24 Hours Doctor Support</h5>
-                                <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                        
+                            {
+                            data.map(appoint => <div key={appoint.id} className="col-md-6">
+                                <div className='bg-white p-3 mt-3 rounded'>
+                                    <div className='d-flex justify-content-between align-items-center'>
+                                        <h5>{appoint.title}</h5>
+                                        <span className='bg-appoint d-flex justify-content-center align-items-center'>
+                                            <img src={appoint.img} alt="" />
+                                        </span>
+                                    </div>
+                                    <p>{appoint.descrip}</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className='bg-white p-3 mt-3 rounded'>
-                                <h5>Exclusive Supports</h5>
-                                <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-                            </div>
-                        </div>
-                        <div className="col-md-6 mt-3">
-                            <div className='bg-white p-3 rounded'>
-                                <h5>Friendly Environment</h5>
-                                <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-                            </div>
-                        </div>
-                        <div className="col-md-6 mt-3">
-                            <div className='bg-white p-3 rounded'>
-                                <h5>24 Hours Nurse Support</h5>
-                                <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-                            </div>
-                        </div>
+                            )
+                            }
+                        
+                    
                     </div>
                 </div>
             </div>

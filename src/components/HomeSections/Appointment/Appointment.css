@@ -3,4 +3,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 20px;
+}
+
+.bg-appoint {
+  background-image: url("../../../assets/Ellipse_12.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 50px;
+  height: 50px;
 }
