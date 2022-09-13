@@ -15,14 +15,14 @@ const Header = () => {
                 <Nav className="ms-auto my-2 my-lg-0"
                     style={{ maxHeight: '100px' }} navbarScroll >
                     <Nav.Link style={{color:'#2D89FF'}} href="#action1">Home</Nav.Link>
-                    <Nav.Link href="#action2">About</Nav.Link>
-                    <Nav.Link href="#action2">Departments</Nav.Link>
-                    <Nav.Link href="#action2">Pages</Nav.Link>
-                    <Nav.Link href="#action2">Blog</Nav.Link>
-                    <Nav.Link href="#action2">Contact</Nav.Link>
+                    <Nav.Link to="/">About</Nav.Link>
+                    <Nav.Link to="/">Departments</Nav.Link>
+                    <Nav.Link to="/">Pages</Nav.Link>
+                    <Nav.Link to="/">Blog</Nav.Link>
+                    <Nav.Link to="/">Contact</Nav.Link>
                 </Nav>
                 <Nav className="ms-auto my-2 my-lg-0">
-                    <Button variant="outline-success">Free Consultation</Button>
+                    <Button variant="outline-primary" >Free Consultation</Button>
                 </Nav>
           
                 </Navbar.Collapse>

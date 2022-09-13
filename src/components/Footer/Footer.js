@@ -19,10 +19,10 @@ const Footer = () => {
                         </div>
             
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-sm-12 col-md-6 col-lg-6">
                         <h4 className='mt-5 text-color'>Quick Links</h4>
-                        <div className="row">
-                            <div className="col-xs-4 col-md-6 col-lg-6">
+                        <div className="d-flex justify-content-between">
+                            <div className="col-sm-6 col-md-6 col-lg-6">
                                 <ul className='foot-nav'>
                                     <li><Link to="/">About us</Link></li>
                                     <li><Link to="/">Our Pricing</Link></li>
@@ -31,7 +31,7 @@ const Footer = () => {
                                     <li><Link to="/">Privacy Policy</Link></li>
                                 </ul>
                             </div>
-                            <div className="col-xs-4 col-md-6 col-lg-6">
+                            <div className="col-6 col-md-6 col-lg-6">
                                 <ul className='foot-nav'>
                                     <li><Link to="/">Services</Link></li>
                                     <li><Link to="/">Our Doctors</Link></li>

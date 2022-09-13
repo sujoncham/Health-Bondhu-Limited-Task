@@ -30,7 +30,7 @@ const Appointment = () => {
                     <div className="row">
                         
                             {
-                            data.map(appoint => <div key={appoint.id} className="col-md-6">
+                            data.map(appoint => <div key={appoint.id} className="col-sm-12 col-md-6 col-lg-6">
                                 <div className='bg-white p-3 mt-3 rounded'>
                                     <div className='d-flex justify-content-between align-items-center'>
                                         <h5>{appoint.title}</h5>

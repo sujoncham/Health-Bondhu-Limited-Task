@@ -96,6 +96,10 @@
     width: 100% !important;
     padding: 5px !important;
   }
+
+  .meetDoctor {
+    display: none;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
