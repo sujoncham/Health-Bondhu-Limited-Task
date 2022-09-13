@@ -1,0 +1,40 @@
+.logo-text-one {
+  color: #2d89ff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.logo-text-two {
+  color: #642dff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.foot-nav {
+  list-style: none;
+}
+.foot-nav li {
+  padding: 5px;
+}
+.foot-nav li a {
+  text-decoration: none;
+  color: #575757;
+  font-size: 12px;
+}
+
+.foot-nav li a:hover {
+  color: #2d89ff;
+}
+
+.text-color {
+  color: #642dff;
+  font-size: 14px;
+}
+.dayswidth {
+  width: 120px;
+  color: #2d89ff;
+  font-weight: 500;
+}
+
+.my-color {
+  font-size: 14px;
+}
