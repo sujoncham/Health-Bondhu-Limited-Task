@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaPlus } from "react-icons/fa";
 import myQF from '../../../assets/Group_10.png';
 import myexpert from '../../../assets/image_5.png';
+import '../Banner/Banner.css';
 import './FQA.css';
 
 
@@ -58,15 +59,15 @@ const FQA = () => {
                     <h5 style={{color:"#642DFF"}}>FAQ Questions</h5>
                     <h1>Get Your General Answer</h1>
                 </div>
-            <div className="col-md-6">
+            <div className="col-md-6 order-text">
                 {
                     images.map((image) => <div className='mouse-pointer rounded d-flex justify-content-between align-items-center mb-5 p-3' style={{border: show === image ? '5px solid #2D89FF' : '3px solid #642DFF'}} key={image.id}>
-                        <span onClick={()=>setShow(image)} className='h4'>{image.title}</span>
+                        <span onClick={()=>setShow(image)} className='my-title'>{image.title}</span>
                         <FaPlus />
                         </div>)
                 }
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 order-image">
                 <div className='p-5 position-relative' style={bgFQA}>
                 { show ? (<div style={{border: show === answer.img ? '5px solid #2D89FF' : ''}}>
                     <img src={answer.img}  className="w-100 rounded" alt='' /> </div>)

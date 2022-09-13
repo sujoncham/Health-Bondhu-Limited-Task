@@ -1,5 +1,6 @@
 import React from 'react';
 import treatment from '../../../assets/pose_4.png';
+import '../Banner/Banner.css';
 import './Treatment.css';
 
 const Treatment = () => {
@@ -7,7 +8,7 @@ const Treatment = () => {
 
     return (
         <div className="row">
-                <div className="col-md-6 mt-5">
+                <div className="col-md-6 mt-5 order-text">
                     <div className='treatment'>
                         <h4>16+ Years Experiences</h4>
                         <h1>We Are Always ensure Best Medical Treatment For Your Health</h1>
@@ -17,7 +18,7 @@ const Treatment = () => {
            
                 </div>
                 <div className="col-md-6 mt-5">
-                    <div className='bgtreat d-flex justify-content-center align-items-center'>
+                    <div className='bgtreat d-flex justify-content-center align-items-center order-image'>
                         <img className='w-75' src={treatment} alt="treatment" />
                     </div>
                 </div>

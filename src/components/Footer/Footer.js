@@ -7,8 +7,8 @@ const Footer = () => {
     return (
         <div style={{background:'#cfdcf4'}} className="footer">
             <div className="container">
-                <div className="row">
-                    <div className="col-md-3">
+                <div className="row my-border">
+                    <div className="col-sm-12 col-md-3 col-lg-3">
                         <div className='mt-5'>
                             <div>
                                 <span className='logo-text-one'>Doc</span> 
@@ -20,9 +20,9 @@ const Footer = () => {
             
                     </div>
                     <div className="col-md-6">
-                        <h4 className='mt-5 mx-4 text-color'>Quick Links</h4>
+                        <h4 className='mt-5 text-color'>Quick Links</h4>
                         <div className="row">
-                            <div className="col-sm-6 col-md-6">
+                            <div className="col-xs-4 col-md-6 col-lg-6">
                                 <ul className='foot-nav'>
                                     <li><Link to="/">About us</Link></li>
                                     <li><Link to="/">Our Pricing</Link></li>
@@ -31,7 +31,7 @@ const Footer = () => {
                                     <li><Link to="/">Privacy Policy</Link></li>
                                 </ul>
                             </div>
-                            <div className="col-sm-6 col-md-6">
+                            <div className="col-xs-4 col-md-6 col-lg-6">
                                 <ul className='foot-nav'>
                                     <li><Link to="/">Services</Link></li>
                                     <li><Link to="/">Our Doctors</Link></li>
@@ -43,7 +43,7 @@ const Footer = () => {
                         </div>
                         
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-sm-12 col-md-3 col-lg-3">
                         <h4 className='mt-5 text-color'>Opening Hours</h4>
                         <div className='time-text'>
                             <div className='d-flex justify-content-start gap-3'>
@@ -68,10 +68,12 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                    <div className="row">
                     <div className="col-md-12">
                         <p className='mt-4 mb-4'>Copyright @222 Medicom All Rights Reserved</p>
                     </div>
-                </div>
+                    </div>
             </div>
         </div>
     );

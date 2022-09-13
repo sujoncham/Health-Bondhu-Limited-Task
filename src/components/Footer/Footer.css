@@ -11,6 +11,7 @@
 
 .foot-nav {
   list-style: none;
+  padding: 0;
 }
 .foot-nav li {
   padding: 5px;
@@ -42,4 +43,8 @@
 .time-text {
   font-size: 12px;
   line-height: 30px;
+}
+
+.my-border {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }

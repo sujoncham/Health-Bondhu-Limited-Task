@@ -1,4 +1,7 @@
 import React from 'react';
+import { Carousel } from 'react-bootstrap';
+import banner from '../../../assets/pose_2.png';
+import './Testimonial.css';
 
 const Testimonial = () => {
     return (
@@ -7,22 +10,58 @@ const Testimonial = () => {
                 <h5 style={{color:"#642DFF"}}>Testimonial</h5>
                 <h1>What they say?</h1>
             </div>
-            <div className="col-md-6">
-                <div>
-                    <h2>David Jeams</h2>
-                    <h3>Pratient</h3>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, tenetur, magnam rem qui, similique cumque quaerat autem libero soluta quidem nobis odit atque ipsum modi obcaecati laudantium possimus! Ipsa, blanditiis.</p>
-                    </div>
-                </div>
-
-                
+                <div className="d-flex justify-content-center">
+                    <div className="col-md-6 col-md-offset-3 bg-slider">
+              
+                    <Carousel>
+                        <Carousel.Item>
+                            <div className="row">
+                            <div className="col-md-8">
+                                    
+                                    <h3 className='text-dark'>David Jeams2</h3>
+                                    <h3 className='text-dark'>Pratient</h3>
+                                    <p className='text-dark'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, tenetur, magnam rem qui, similique cumque quaerat autem libero soluta quidem nobis odit atque ipsum modi obcaecati laudantium possimus! Ipsa, blanditiis.</p>
+                                    
+                                </div>
+                                <div className="col-md-4">
+                                    <img className="d-block w-100" src={banner} alt="Third slide" />
+                                </div>
+                            </div>
+                            
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <div className="row">
+                                <div className="col-md-8">
+                                    
+                                    <h3 className='text-dark'>David Jeams2</h3>
+                                    <h3 className='text-dark'>Pratient</h3>
+                                    <p className='text-dark'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, tenetur, magnam rem qui, similique cumque quaerat autem libero soluta quidem nobis odit atque ipsum modi obcaecati laudantium possimus! Ipsa, blanditiis.</p>
+                                    
+                                </div>
+                                <div className="col-md-4">
+                                <img className="d-block w-100" src={banner} alt="Third slide" />
+                                </div>
+                            </div>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <div className="row">
+                            <div className="col-md-8">
+                                    
+                                    <h3 className='text-dark'>David Jeams2</h3>
+                                    <h3 className='text-dark'>Pratient</h3>
+                                    <p className='text-dark'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, tenetur, magnam rem qui, similique cumque quaerat autem libero soluta quidem nobis odit atque ipsum modi obcaecati laudantium possimus! Ipsa, blanditiis.</p>
+                                    
+                                </div>
+                                <div className="col-md-4">
+                                <img className="d-block w-100" src={banner} alt="Third slide" />
+                                </div>
+                            </div>
+                        </Carousel.Item>
+                    </Carousel>
     
+                </div>
             </div>
-            <div className="col-md-6">
-                <img src="" alt="" />
-                <h1>Hello</h1>
-            </div>
+            
         </div>
     );
 };
