@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card } from 'react-bootstrap';
-import doctorImg from '../../assets/doctors.png';
+import { useNavigate } from 'react-router-dom';
 
 const FreeConsult = () => {
 
-    const [consultants, setConsultants] = useState([])
+    const [consultants, setConsultants] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(()=>{
         const getData = async()=>{
@@ -13,105 +14,31 @@ const FreeConsult = () => {
             setConsultants(data)
         } 
         getData();
-    }, [])
+    }, []);
+
+    const handleConsultant = (id) =>{
+        navigate(`/freeConsult/${id}`)
+    }
 
 
     return (
         <div className='container py-5'>
             <div className="row">
                 <h1>consultants: {consultants.length}</h1>
-                <div className="col-md-3">
+                {
+                    consultants.map(consult => <div key={consult.id} className="col-md-3">
                     <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={doctorImg} />
+                        <Card.Img variant="top" src={consult.img} />
                         <Card.Body>
-                            <Card.Title>Dr. Selina Khan</Card.Title>
+                            <Card.Title>{consult.name}</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            {consult.description}
                             </Card.Text>
-                            <Button variant="primary">Free Consultation</Button>
+                            <Button onClick={() => handleConsultant(consult._id)} variant="primary">Free Consultation</Button>
                         </Card.Body>
                     </Card>
-                </div>
-                <div className="col-md-3">
-                    <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={doctorImg} />
-                        <Card.Body>
-                            <Card.Title>Dr. Selina Khan</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Free Consultation</Button>
-                        </Card.Body>
-                    </Card>
-                </div>
-                <div className="col-md-3">
-                    <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={doctorImg} />
-                        <Card.Body>
-                            <Card.Title>Dr. Selina Khan</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Free Consultation</Button>
-                        </Card.Body>
-                    </Card>
-                </div>
-                <div className="col-md-3">
-                    <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={doctorImg} />
-                        <Card.Body>
-                            <Card.Title>Dr. Selina Khan</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Free Consultation</Button>
-                        </Card.Body>
-                    </Card>
-                </div>
-                <div className="col-md-3">
-                    <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={doctorImg} />
-                        <Card.Body>
-                            <Card.Title>Dr. Selina Khan</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Free Consultation</Button>
-                        </Card.Body>
-                    </Card>
-                </div>
-                <div className="col-md-3">
-                    <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={doctorImg} />
-                        <Card.Body>
-                            <Card.Title>Dr. Selina Khan</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Free Consultation</Button>
-                        </Card.Body>
-                    </Card>
-                </div>
-                <div className="col-md-3">
-                    <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={doctorImg} />
-                        <Card.Body>
-                            <Card.Title>Dr. Selina Khan</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Free Consultation</Button>
-                        </Card.Body>
-                    </Card>
-                </div>
-            
+                </div>)
+                }
             </div>
             
         </div>

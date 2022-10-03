@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer/Footer';
+import FreeChat from './components/FreeChat/FreeChat';
 import FreeConsult from './components/FreeConsult/FreeConsult';
 import Header from './components/Header/Header';
 import About from './components/Pages/About';
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/freeConsult' element={<FreeConsult></FreeConsult>}></Route>
+        <Route path='/freeConsult/:id' element={<FreeChat></FreeChat>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/departments' element={<Departments></Departments>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
